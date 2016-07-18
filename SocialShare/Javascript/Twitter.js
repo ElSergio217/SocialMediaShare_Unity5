@@ -1,0 +1,21 @@
+﻿#pragma strict
+// ASCII Encoding Reference:
+// http://www.w3schools.com/tags/ref_urlencode.asp
+//
+//Created by:
+//https://twitter.com/elsergio217
+
+//Tweet you want user to post
+var status : String = "Download #CircularForce now! @elsergio217 https://itunes.apple.com/us/app/circular-force/id1073741949";
+
+function Share () {
+
+	//Starting part of URL Link
+	var URL = "https://twitter.com/home?status=";
+	
+	//Encodes status to be URL friendly by replacing characters to ASCII
+	var Encode = status.Replace(" ", "%20").Replace("#","%23").Replace("@","%40").Replace(":","%3A");
+
+	//Combine URL and Encode. Opens on Browser
+	Application.OpenURL (URL + Encode);
+}
