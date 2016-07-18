@@ -6,13 +6,13 @@ Basic social media buttons integration for Unity5.
 
 ##Files
 -SocialShare
-	-C#
-		-Facebook.cs
-		-Twitter.cs
-	-Javascript
-		-Facebook.js
-		-Twitter.js
-	Example.Scene
+   -C#
+      -Facebook.cs
+      -Twitter.cs
+   -Javascript
+      -Facebook.js
+      -Twitter.js
+   Example.Scene
 
 -Readme.MD
 
